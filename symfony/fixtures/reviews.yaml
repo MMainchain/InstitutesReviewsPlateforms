@@ -1,0 +1,31 @@
+App\Entity\Review:
+  radisson_google_review_1:
+    rate: 5
+    author: '<firstName()> <lastName()>'
+    comment: 'Super hôtel, je recommande.'
+    platform: '@google'
+    institute: '@radisson_blu'
+    date: '<dateTimeBetween("-2 days", "now")>'
+  radisson_google_review_2:
+    rate: 3
+    author: '<firstName()> <lastName()>'
+    comment: 'Bof.'
+    platform: '@google'
+    institute: '@radisson_blu'
+    date: '<dateTimeBetween("-1 days", "now")>'
+  radisson_google_review_3:
+    rate: 1
+    author: '<firstName()> <lastName()>'
+    comment: 'Vraiment bof.'
+    platform: '@google'
+    institute: '@radisson_blu'
+    date: '<dateTimeBetween("-0 days", "now")>'
+  radisson_airbnb_review_1:
+    rate: 5
+    author: '<firstName()> <lastName()>'
+    comment: 'Excellent !'
+    platform: '@airbnb'
+    institute: '@radisson_blu'
+    date: '<dateTimeBetween("-2 days", "now")>'
+
+

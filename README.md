@@ -1,4 +1,4 @@
-# Institutes Reviews Plateform Technical test
+# Institutes Reviews Platform Technical test
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ To run this project on your computer, you need to have at least :
 and you need to make sure that the following ports are free :
 
 - 3000
-- 8080
+- 8000
 
 ## Installation
 

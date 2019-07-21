@@ -1,0 +1,5 @@
+App\Entity\Institute:
+  radisson_blu:
+    label: Radisson Blu Resort Nantes
+  duchesse_anne:
+    label: Hôtel de la Duchesse-Anne

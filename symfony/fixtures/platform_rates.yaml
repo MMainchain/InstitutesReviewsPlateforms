@@ -1,0 +1,16 @@
+App\Entity\PlatformRate:
+  radisson_airbnb_rate:
+    rate: 5
+    date: '<dateTimeBetween("-2 days", "now")>'
+    platform: '@airbnb'
+    institute: '@radisson_blu'
+  radisson_booking_rate:
+    rate: 4
+    date: '<dateTimeBetween("-1 days", "now")>'
+    platform: '@booking'
+    institute: '@radisson_blu'
+  radisson_google_rate:
+    rate: 4
+    date: '<dateTimeBetween("-0 days", "now")>'
+    platform: '@google'
+    institute: '@radisson_blu'

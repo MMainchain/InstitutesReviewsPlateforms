@@ -16,6 +16,9 @@ stop:
 start:
 	docker-compose up -d
 	docker-compose exec php composer install --no-progress --no-suggest --ansi --no-interaction
+	sleep 2
+	docker-compose exec php php bin/console --no-interaction doctrine:migrations:migrate
+	docker-compose exec php php bin/console --no-interaction hautelook:fixtures:load
 
 node:
 	docker-compose exec node /bin/bash

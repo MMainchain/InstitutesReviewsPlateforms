@@ -1,0 +1,7 @@
+App\Entity\Platform:
+  airbnb:
+    label: Airbnb
+  booking:
+    label: Booking
+  google:
+    label: Google
