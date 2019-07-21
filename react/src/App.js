@@ -1,12 +1,16 @@
 import React, { Component } from "react";
 import { hot } from "react-hot-loader";
+import SearchComponent from "./components/SearchComponent";
 
 class App extends Component{
     render() {
         return(
-            <div>
-                <p>Hello world!</p>
-            </div>
+            <span>
+                <h1>Platforms Rates</h1>
+                <span>
+                    <SearchComponent />
+                </span>
+            </span>
         );
     }
 }
