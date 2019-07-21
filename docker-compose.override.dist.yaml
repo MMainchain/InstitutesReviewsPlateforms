@@ -1,0 +1,15 @@
+version: '2'
+services:
+  mysql:
+    ports:
+     - 3307:3306
+  php:
+    ports:
+     - '9002:9000'
+  nginx:
+    user: 'root'
+    ports:
+     - '8000:80'
+  node:
+    ports:
+     - '3000:3000'

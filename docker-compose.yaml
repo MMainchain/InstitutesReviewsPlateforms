@@ -1,0 +1,39 @@
+version: '2'
+
+services:
+    mysql:
+        build: ./docker/mysql
+        environment:
+            MYSQL_DATABASE: "symfony"
+            MYSQL_USER: "symfony"
+            MYSQL_PASSWORD: "symfony"
+            MYSQL_ROOT_PASSWORD: ""
+            MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    php:
+        user: '${UID}'
+        build: 
+            context: ./docker/php
+            args:
+                UID: ${UID}
+        volumes:
+            - ./symfony:/var/www/symfony:cached
+            - ~/.ssh:/home/user/.ssh
+        links:
+            - mysql
+    nginx:
+        build: ./docker/nginx
+        links:
+            - php
+        volumes_from:
+            - php
+        volumes:
+            - ./docker/nginx/logs/:/var/log/nginx:cached
+    node:
+        build: ./docker/node
+        working_dir: /usr/app
+        command: npm run start
+        volumes:
+            - ./react:/usr/app/
+            - /usr/app/node_modules
+
+
