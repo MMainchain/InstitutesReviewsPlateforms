@@ -46,7 +46,7 @@ class InstituteController extends AbstractController
     {
         $institute = $instituteRepository->getInstituteByPlatformRate($platformRate);
 
-        return new JsonResponse($institutes);
+        return new JsonResponse($institute);
     }
 
     /**
@@ -58,7 +58,7 @@ class InstituteController extends AbstractController
     {
         $institute = $instituteRepository->getInstituteByReview($review);
 
-        return new JsonResponse($institutes);
+        return new JsonResponse($institute);
     }
 
 }

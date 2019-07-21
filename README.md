@@ -57,3 +57,28 @@ Enter the mysql's cli :
 ```bash
 make mysql
 ```
+
+## How to test :
+
+The symfony backend is working, and there is some fixtures in the database, as you can see in `/symfony/fixtures/` folder.
+
+The following routes are working (GET) :
+
+- `/institutes/{id}`
+- `/institutes`
+- `/reviews/{id}/institutes`
+- `/rates/{id}/institutes`
+- `/platforms/{id}`
+- `/platforms`
+- `/reviews/{id}/platforms`
+- `/rates/{id}/platforms`
+- `/rates/{id}`
+- `/rates`
+- `/platforms/{id}/rates`
+- `/institutes/{id}/rates`
+- `/reviews/{id}`
+- `/reviews`
+- `/platforms/{id}/reviews`
+- `/institutes/{id}/reviews`
+
+The frontend is running but no actions are available at the end of the code session.
